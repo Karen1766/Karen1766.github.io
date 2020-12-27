@@ -3690,6 +3690,8 @@ input, select, textarea {
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
 		padding: 5em 5em 3em 5em ;
 		width: calc(100% + 2em);
 		margin: 0 0 3em -2em;
@@ -3705,6 +3707,13 @@ input, select, textarea {
 			margin: 2.5em 0 2em 0;
 			font-size: 0.8em;
 			text-align: center;
+		}
+
+		#footer > section {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
 		}
 
 		@media screen and (max-width: 1280px) {
@@ -3792,4 +3801,14 @@ input, select, textarea {
 .sublist li {
 	width: 100%;
 	margin-left: 0;
+}
+
+.accessibility-text {
+	position: absolute;
+	left: 99999999px;
+}
+
+.custom-subtitle {
+	color: white;
+	font-size: 2.5em;
 }
